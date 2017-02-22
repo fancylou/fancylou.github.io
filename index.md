@@ -1,6 +1,4 @@
-FancyLou's Blog
-================
+# FancyLou's Blog
 
-Hello World
 
-## Features
+Hello World !
