@@ -8,5 +8,5 @@ permalink: /about/
 
 Hi, I'm FancyLou, Welcome to my Blog !
 
-![github](http://muliba.u.qiniudn.com/github.png) : [FancyLou](https://github.com/fancylou)
+![github](http://muliba.u.qiniudn.com/github.png?imageView/2/w/32/h/32) : [FancyLou](https://github.com/fancylou)
 
