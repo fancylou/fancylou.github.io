@@ -4,8 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![FancyLou](https://s.gravatar.com/avatar/1b6b84ff3c4a172e8f0fc6b2317d76e7?s=128)
 
-You can find the source code for the Jekyll new theme [minima](https://github.com/jekyll/minima)
+Hi, I'm FancyLou, Welcome to my Blog !
 
-You can find the source code for [jekyll](https://github.com/jekyll/jekyll)
+![github](http://muliba.u.qiniudn.com/github.svg) : [FancyLou](https://github.com/fancylou)
+
