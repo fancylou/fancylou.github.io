@@ -4,7 +4,6 @@ title:  "Android开发调试工具Stetho（FaceBook出品）"
 date:   2017-03-16 16:31:52 +0800
 categories: android
 ---
-### Android开发调试工具Stetho（FaceBook出品）
 
 ![logo](http://facebook.github.io/stetho/static/logo.png)
 
@@ -15,9 +14,9 @@ categories: android
 首先引入核心包
 
 ```json
-dependencies { 
-    compile 'com.facebook.stetho:stetho:1.4.2' 
-  } 
+dependencies {
+    compile 'com.facebook.stetho:stetho:1.4.2'
+  }
 ```
 
 然后在项目的Application类的onCreate方法内加入代码：
@@ -52,9 +51,9 @@ public class MyApplication extends Application {
 OkHttp3 用如下的包
 
 ```json
-dependencies { 
-    compile 'com.facebook.stetho:stetho-okhttp3:1.4.2' 
-  } 
+dependencies {
+    compile 'com.facebook.stetho:stetho-okhttp3:1.4.2'
+  }
 ```
 
 集成代码：（这里注意是用的 **addNetworkInterceptor** 而不是 **addInterceptor**）
@@ -68,9 +67,9 @@ new OkHttpClient.Builder()
 Okhttp2 用如下的包
 
 ```json
-dependencies { 
-    compile 'com.facebook.stetho:stetho-okhttp:1.4.2' 
-  } 
+dependencies {
+    compile 'com.facebook.stetho:stetho-okhttp:1.4.2'
+  }
 ```
 
 集成代码：
@@ -91,9 +90,9 @@ client.networkInterceptors().add(new StethoInterceptor());
 Stetho还为使用HttpURLConnection进行交互的项目提供了网络访问情况监控的集成方式，需要添加对应的包
 
 ```json
-dependencies { 
-    compile 'com.facebook.stetho:stetho-urlconnection:1.4.2' 
-  } 
+dependencies {
+    compile 'com.facebook.stetho:stetho-urlconnection:1.4.2'
+  }
 ```
 
 可以使用包内提供的 `StethoURLConnectionManager` 进行集成，具体集成方式可以查看FaceBook提供的[Sample](https://github.com/facebook/stetho/tree/master/stetho-sample)应用
@@ -101,4 +100,3 @@ dependencies {
 
 
 官方还提供了关于Dump输出自定义的说明，这个我还没用到过，有需要的可以查看官方的说明。
-

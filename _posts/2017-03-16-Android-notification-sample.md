@@ -4,7 +4,6 @@ title:  "Android 通知处理"
 date:   2017-03-16 21:42:00 +0800
 categories: android
 ---
-### Android 通知处理
 
 
 
@@ -198,6 +197,3 @@ InBoxStyle和上面的BigTextStyle差不多，它控制多行文本显示
 
 
 还有一个最灵活的是自定义样式的通知，使用的是一个`RemoteView`，具体代码和样列待续。。。。。。^_^
-
-
-

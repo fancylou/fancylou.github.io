@@ -4,7 +4,7 @@ layout: default
 
 <article class="article">
   <h2 class="article__title article__title--single">{{ page.title }}</h2>
-  <time class="article__date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{% if page.author %}By {{ page.author}} on {% endif %}{{ page.date | date: " %H:%M %b.%d-%Y" }}</time>
+  <time class="article__date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{% if page.author %}By {{ page.author}} on {% endif %}{{ page.date | date: " %H:%M %b.%d,%Y" }}</time>
   {% if page.cover %}
     <div class="cover">
       <img src="{{ page.cover }}">
@@ -19,38 +19,37 @@ layout: default
 <div class="blocks">
   <div class="block__item block__item--mr">
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter_username }}">
-      <svg class="btn__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg t="1490601716701" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2377" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48">
+        <defs>
+          <style type="text/css"></style>
+        </defs>
         <title>Twitter Icon</title>
-        <path d="M14.4 4.2C14.4 4.4 14.4 4.5 14.4 4.7 14.4 9 11.1 14 5 14 3.2 14 1.5 13.5 0 12.5 0.3 12.6 0.5 12.6 0.8 12.6 2.3 12.6 3.7 12 4.9 11.2 3.4 11.1 2.2 10.2 1.8 8.9 2 8.9 2.2 8.9 2.4 8.9 2.7 8.9 3 8.9 3.3 8.8 1.8 8.5 0.6 7.2 0.6 5.6L0.6 5.6C1.1 5.8 1.6 6 2.1 6 1.2 5.4 0.7 4.4 0.7 3.2 0.7 2.6 0.8 2.1 1.1 1.6 2.7 3.6 5.2 4.9 7.9 5 7.8 4.8 7.8 4.5 7.8 4.3 7.8 2.5 9.3 1 11.1 1 12 1 12.9 1.4 13.5 2 14.2 1.9 14.9 1.6 15.6 1.2 15.3 2 14.8 2.6 14.1 3.1 14.8 3 15.4 2.8 16 2.5 15.6 3.2 15 3.8 14.4 4.2L14.4 4.2Z"/>
+        <path d="M960.9779 235.4893c-14.5357 30.551-39.6083 52.2916-64.8468 72.8218-15.5453 12.628-19.3638 25.6686-20.3551 44.7201-11.4893 217.9133-106.8227 386.0869-307.455 479.5105-166.825 77.6755-335.2084 65.452-496.6912-24.706-3.2492-1.7981-7.5981-2.8262-7.8193-10.3137 65.5626 4.6244 129.1428-3.7458 189.1799-31.2402 24.6497-11.2701 48.9871-23.3462 73.4915-44.5655-12.2614-2.4218-21.0893-3.9639-29.7902-5.9822-61.1011-13.9141-104.8771-49.4479-132.1513-105.7597-6.5341-13.4799-6.2956-20.5281 12.0771-18.9501 17.1059 1.4684 34.4515 0.3123 52.7872-2.4218-84.3203-33.5882-133.7303-90.9466-137.9707-185.5181 26.5595 7.8561 48.9144 19.7222 78.6125 19.116-38.3427-32.5519-64.3871-68.8937-73.344-115.6239-8.7552-45.6387-3.3229-88.7347 21.7682-131.6669 34.9112 38.9581 70.2976 73.5652 111.5587 101.7119 75.8221 51.7233 159.5372 81.2554 250.4837 91.5436 15.5279 1.7531 23.1813 0.77 21.0166-19.1621-8.5166-78.4927 21.6207-140.6874 88.5053-181.3053 67.8564-41.1965 139.605-40.49 203.3869 6.7267 30.2469 22.401 54.4758 23.3646 84.7985 9.7004 19.6925-8.8648 39.5889-17.2073 65.1028-28.2378-15.6027 42.3342-38.6908 72.7112-76.2634 98.1586 35.1119 0.2202 62.7712-14.592 92.286-20.2363L960.9779 235.4893z" p-id="2378" fill="#5AA8DF">
+        </path>
       </svg>
     </a>
   </div>
   <div class="block__item">
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">
-      <svg class="btn__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg t="1490601751915" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3144" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48">
+        <defs>
+          <style type="text/css"></style>
+        </defs>
         <title>Facebook Icon</title>
-        <path d="M9.5 3L12 3 12 0 9.5 0C7.6 0 6 1.6 6 3.5L6 5 4 5 4 8 6 8 6 16 9 16 9 8 11.5 8 12 5 9 5 9 3.5C9 3.2 9.2 3 9.5 3L9.5 3Z"/>
+        <path d="M681.8161 612.2455c33.9272 0 67.6229-0.3717 101.2951 0.2324 10.0792 0.1403 15.0456-3.0188 16.3011-13.0621 4.8302-38.1071 9.986-76.1682 14.8634-114.2528 0.3246-2.6931-0.6062-5.5255-1.1858-10.1939-44.0515 0-87.4988 0-130.4852 0 0-38.5024-2.2036-75.1698 0.7905-111.4194 1.9978-24.5699 23.8275-36.7841 57.2672-37.6433 26.1007-0.6963 52.2476-0.1393 79.6979-0.1393 0-41.6143 0-81.5329 0-124.6321-21.3647-1.579-43.1473-4.9234-64.8602-4.4124-32.9974 0.766-67.0638-0.3021-98.6952 7.4547-70.3836 17.2534-114.9942 77.9786-116.5957 151.8715-0.8591 38.4553-0.1618 76.9096-0.1618 117.5962-6.9898 0.4178-13.0744 1.067-19.158 1.0916-27.4012 0.1157-54.828 0.3942-82.2292-0.1178-10.752-0.2089-16.2785 2.6941-16.1628 14.4906 0.3482 36.1564 0.3246 72.3139 0.0225 108.4692-0.1157 11.4606 4.8312 14.9903 15.8843 14.804 33.1141-0.511 66.2292-0.1853 100.3663-0.1853 0 115.2266 0 228.6428 0 343.4527-158.0483 0-315.6787 0-474.6568 0 0-296.4992 0-593.0076 0-890.8052 296.4736 0 592.9492 0 890.8155 0 0 296.3343 0 592.8202 0 890.9425-4.6213 0.3717-9.6358 1.1151-14.6289 1.1602-81.0691 0.0481-162.1125-0.0901-243.159 0.2335-11.052 0.0471-17.3681-1.5299-17.321-14.8152 0.3482-107.2855 0.2079-214.569 0.2785-321.9016C680.0998 618.282 680.9805 616.0998 681.8161 612.2455z" p-id="3145" fill="#39569c">
+        </path>
       </svg>
     </a>
   </div>
 </div>
 {% if site.enable_comment %}
 <hr>
-<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- disqus 评论
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 
-<!-- disqus 评论-->
 <div id="disqus_thread"></div>
 <script  type="text/javascript">
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
+(function() {
 var d = document, s = d.createElement('script');
 s.src = 'https://www-muliba-net.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
@@ -58,5 +57,20 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
+-->
+
+<!-- 网易云跟帖 -->
+<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<script>
+var cloudTieConfig = {
+  url: document.location.href,
+  sourceId: "",
+  productKey: "9f222737e3634033be592bf436283013",
+  target: "cloud-tie-wrapper"
+};
+var yunManualLoad = true;
+Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+</script>
+
 {% endif %}
