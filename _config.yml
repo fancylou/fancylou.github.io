@@ -1,34 +1,36 @@
-safe: false
-permalink: /posts/:title.html
-exclude:
-  - README.md
+# Site configuration
+domain: "http://www.muliba.net"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.muliba.net" # the base hostname & protocol for your site
+permalink: /year/month/day/:title.html
+avatar: https://s.gravatar.com/avatar/1b6b84ff3c4a172e8f0fc6b2317d76e7?s=128
+about: http://muliba.u.qiniudn.com/wp-content/uploads/2012/03/3%E5%AF%B8%E9%92%B1%E5%8C%85%E7%85%A7-300x200.jpg
+favicon: http://muliba.u.qiniudn.com/favicon.ico
+basecss:
+# Theme specific configuration
+title: FancyLou's Blog
+description: >
+  Hi there, My name is FancyLou, Welcome to my Blog.
+  I was born and raised in China.
+  I'm an Android Developer.
 
-name: FancyLou's Blog
-host: www.muliba.net
-desc: Hi,Welcome My Blog
+# Contact and social media links
+twitter_username: FancyLouTweet
+github_username: fancylou
+facebook_username:
+instagram_username:
+linkedin_username:
 
-custom:
-    category:
-        default: Default Category
-        another: Android Category
-    categories:
-      - name:  default
-        title: Default Category
+exclude: ['node_modules', 'gulpfile.js', 'package.json']
 
-      - name:  android
-        title: Android Category
+kramdown:
+  input: GFM
 
-    scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
+# If U enable the comment, edit disqus or duoshuo account of "/_layouts/post.html"
+# before deploy your webpage
+enable_comment: true
 
-meta:
-    author:
-        name: FancyLou
-        email: Fancylou@outlook.com
-        disqus: muliba              # Disqus缩略标识
-        gcse: 007212716797013267673:irm0hfnyso4     # Google自定义搜索标识ID
-        github: fancylou                 # GitHub账号
-        gravatar: 72c53db1893a7706bcec817d09ec1645  # Gravatar头像标识
-
-    disqus: disqus.com/embed.js                     # Disqus评论的JS地址
-    gapi: http://www.google.com/jsapi               # Google API地址
-    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
+gems: ['jekyll-paginate']
+# Pagination
+paginate: 5
+paginate_path: /archive/page:num
