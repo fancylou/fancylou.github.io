@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Kotlin data class"
+title: "Kotlin使用记录1"
 categories: kotlin
 date: 2017-03-28 20:13:00
 
 ---
 
-**Kotlin语言学习记录1**
+#### data class
 
 Kotlin的data class 相当于是java里面经常说的实体对象，也就是我们用来存放数据的对象。这种类一般都是除了一堆属性和getter、setter方法外，没有别的东西，但是又不得不写。在Kotlin里面有专门的关键字标识这种类 `data` ，它是这么写的：
 
