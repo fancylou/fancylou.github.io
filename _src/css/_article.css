@@ -57,9 +57,22 @@
 }
 
 .article__date {
-  display: block;
   margin-bottom: .8rem;
   font-size: .7501rem;
+}
+
+.article__categories {
+  float: right;
+  position: relative;
+  margin-right: 40px;
+  a {
+    color: var(--color2);
+
+    &:hover {
+      color: var(--color-text);
+      text-decoration: none;
+    }
+  }
 }
 
 .cover {
