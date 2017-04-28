@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "发布android的library包到Jcenter"
-categories: kotlin,android
+categories: kotlin android
 date: 2017-04-17 23:33:00
-
 ---
 
-Android开发的时候很会使用到很多优秀的开源库，gradle引入这些包的时候，大部分都是从Jcenter这个仓库来的，这个Jcenter库是由Bintray在维护，如果想自己开发一个开源库或者开源组件，可以打包发布到Jcenter供大家使用，方便自己也方便大家。
+Android开发的时候会使用到很多优秀的开源库，gradle引入这些包的时候，大部分都是从Jcenter这个仓库来的，这个Jcenter库是由Bintray在维护，如果想自己开发一个开源库或者开源组件，可以打包发布到Jcenter供大家使用，方便自己也方便大家。
 
 想发布包到Jcenter，先的去[Bintray](https://bintray.com/)注册账户，这里注意注册一个开源账户，前面那个免费账户要什么组织什么的，我也没搞懂，反正就是一直没传成功！
 
