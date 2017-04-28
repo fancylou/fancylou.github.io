@@ -13,15 +13,15 @@ date: 2017-04-28 09:24:00
 
 开始我按照传统的思路，根据系统实际的目录结构进行展现，类似windows上的文件选择。
 
-![](http://muliba.u.qiniudn.com/blog/post/filePicker1.2.0-1.jpeg?imageMogr2/auto-orient/thumbnail/720x/blur/1x0/quality/75|imageslim)
+![](http://muliba.u.qiniudn.com/blog/post/filePicker1.2.0-1.jpeg?imageMogr2/auto-orient/thumbnail/720x/blur/1x0/quality/75)
 
 然后还设定了一些可定义项，标题的文字、标题的背景色等：
 
-![](http://muliba.u.qiniudn.com/blog/post/filePicker1.2.0-2.jpeg?imageMogr2/auto-orient/thumbnail/720x/blur/1x0/quality/75|imageslim)
+![](http://muliba.u.qiniudn.com/blog/post/filePicker1.2.0-2.jpeg?imageMogr2/auto-orient/thumbnail/720x/blur/1x0/quality/75)
 
 当然还有单选和多选的选择类型的分别，单选：
 
-![](http://muliba.u.qiniudn.com/blog/post/filePicker1.2.0-3.jpeg?imageMogr2/auto-orient/thumbnail/720x/blur/1x0/quality/75|imageslim)
+![](http://muliba.u.qiniudn.com/blog/post/filePicker1.2.0-3.jpeg?imageMogr2/auto-orient/thumbnail/720x/blur/1x0/quality/75)
 
 使用方法也简单，用现在流行的链式编程：
 
