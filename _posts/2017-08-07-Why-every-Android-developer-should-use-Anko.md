@@ -26,7 +26,7 @@ Commons模块提供了各种各样有用的功能和函数。Layouts模块提供
 
 ### Anko Commons
 
-#### 最基本的
+The most common
 
 让我们开始看看这些基础的简化功能！View.setOnClickListener在Android开发中无处不在，所以如果我们能简化它，将减少很多代码。
 
@@ -45,7 +45,7 @@ button.setOnClickListener(object: View.OnClickListener{
 button.onClick{ }
 ```
 
-#### 有意的
+#### The intentional
 
 使用Intent是作为Android开发者初学的时候最早接触的，但是这个API应该更简单些。
 
@@ -72,7 +72,7 @@ share("share", "subject")
 email("hello@makery.co", "Great app idea", "potato")
 ```
 
-#### 与陌生人聊天更简单
+#### Start a conversation with strangers more easily
 
 Anko也精简了Dialog的API，使代码更友好，不再需要builder模式。
 
@@ -93,7 +93,7 @@ alert(Appcompat, "Kotlin", "Kotlin is so fresh!") {
 }.show()
 ```
 
-#### 尺寸问题
+#### Size issues
 
 当我们需要对dpi进行计算的时候，以前的代码很难理解。
 
@@ -139,7 +139,7 @@ Android的Snack bar相关的API也是需要改进，你是否经常在make了sna
 Snackbar.make(findViewById(android.R.id.content), "This is a snack!", Snackbar.LENGTH_LONG).show()
 ```
 
-#### 你不再需要执行show()！
+**你不再需要执行show()！**
 
 ```kotlin
 longSnackbar(findViewById(android.R.id.content), "This is a snack!")
