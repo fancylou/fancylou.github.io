@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Android SDK version 26 kotlin使用遇到的问题"
-categroies: kotlin
-date: 2017-08-28 13:58:00
+categories:  kotlin
+date:  2017-08-28 13:58:00
 
 ---
 
 
 
-##Part One
+## Part One
 
 今天升级了项目Android Support Library到26.0.1版本，同时肯定把SDK版本也升级到26。结果编译项目的出了一堆错，发现是同一个错误：
 
