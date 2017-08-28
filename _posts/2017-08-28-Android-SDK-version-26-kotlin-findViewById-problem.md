@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Android SDK version 26 后kotlin使用findViewById的错误问题"
+title: "Android SDK version 26 kotlin使用遇到的问题"
 categroies: kotlin
 date: 2017-08-28 13:58:00
 
 ---
 
 
+
+##Part One
 
 今天升级了项目Android Support Library到26.0.1版本，同时肯定把SDK版本也升级到26。结果编译项目的出了一堆错，发现是同一个错误：
 
@@ -50,3 +52,50 @@ var toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 
 哦 对了 `findViewWithTag`函数也是一样的问题
+
+
+
+## Part Two
+
+`Android Support Library` 从 `26.0.0` 开始`supportFragmentManager`加入了一个函数`isStateSaved()`判断当前FragmentManger的状态是否已经被宿主给保存了。也就是当前的Activity是否已经调用了`onSaveInstanceState()`函数保存状态。
+
+因为我们如果在状态保存之后进行Fragment的提交执行了`Commit()`函数， 就会抛出这个异常：
+
+```
+java.lang.IllegalStateException:Can not perform this action after onSaveInstanceState
+```
+
+所以有了这个函数，我们在进行Fragment提交的时候就可以更加安全了。
+
+怎么安全呢，写了个扩展函数，kotlin不写扩展函数怎么行呢
+
+```kotlin
+fun AppCompatActivity.replaceFragmentSafely(fragment: Fragment, tag: String, @IdRes containerViewId: Int,
+                                            allowState: Boolean = false,
+                                            isAddBackStack: Boolean = false,
+                                            @AnimRes enterAnimation: Int = 0,
+                                            @AnimRes exitAnimation: Int = 0,
+                                            @AnimRes enterPopAnimation: Int = 0,
+                                            @AnimRes exitPopAnimation: Int = 0) {
+    val ft = supportFragmentManager.beginTransaction()
+    ft.setCustomAnimations(enterAnimation, exitAnimation, enterPopAnimation, exitPopAnimation)
+    if (isAddBackStack) {
+        ft.addToBackStack(tag)
+    }
+    ft.replace(containerViewId, fragment, tag)
+    if (!supportFragmentManager.isStateSaved) {// isStateSaved is from Android Support Library version 26.0.0
+        ft.commit()
+    } else if (allowState) {
+        ft.commitAllowingStateLoss()
+    }
+}
+```
+
+这样就避免了，因为判断调用commit的时机错误而引起的异常。
+
+```kotlin
+replaceFragmentSafely(fragment, "tag", R.id.fragment_container, true)
+```
+
+
+
