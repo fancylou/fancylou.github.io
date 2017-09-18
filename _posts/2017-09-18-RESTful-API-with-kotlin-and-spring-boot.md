@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RESTful API with kotlin and Spring Boot"
-categories: kotlin, RESTful
+categories: kotlin RESTful
 date: 2017-09-18 13:54:00
 ---
 
