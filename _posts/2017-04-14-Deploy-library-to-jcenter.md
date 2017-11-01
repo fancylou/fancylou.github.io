@@ -144,7 +144,7 @@ task dokkaJavadoc(type: org.gradle.api.tasks.Exec) {
     /**
      * 如果你是 Linux 系统, 就用这个
      */
-//    commandLine "java -Djava.ext.dirs=$toolJarPath -jar $dokkaJarPath $sourceDirs -format $outputFormat -output $outputDirectory"
+//    commandLine "java" ,"-Djava.ext.dirs=$toolJarPath", "-jar", "$dokkaJarPath", "$sourceDirs", "-format", "$outputFormat", "-output", "$outputDirectory"
 
 }
 
