@@ -203,7 +203,7 @@ $ $VENV/bin/pip install -e .
 
 还需要在入口函数中把插件加载进来
 
-####__init__.py
+#### __init__.py
 
 ```python
 from pyramid.config import Configurator
@@ -319,7 +319,7 @@ def main(global_config, **settings):
 
 
 
-####views.py
+#### views.py
 
 ```python
 import colander
