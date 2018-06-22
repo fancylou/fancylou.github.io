@@ -37,14 +37,14 @@ Android开发的时候会使用到很多优秀的开源库，gradle引入这些�
 
 ```json
 classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
+classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
 ```
 
 一个是为了给Android的项目生成maven标准用的，一个是上传文件到bintray服务器用的
 
 建一个**bintrayUpload.gradle**文件，内容：
 
-```json
+```groovy
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
@@ -190,7 +190,7 @@ bintray {
 
 然后把这个文件引入到你要打包的模块的gradle文件内：
 
-```json
+```groovy
 apply from: "../bintrayUpload.gradle"
 ```
 
@@ -215,4 +215,131 @@ apply from: "../bintrayUpload.gradle"
 
 
 **PS：**这里重点说下bintrayUpload.gradle中的关于`kotlinDocJar`任务，因为我的library是用kotlin写的，于是就一直生成步了javadoc，没有javadoc，Jcenter就不肯通过审核。这里要感谢[Kejin](https://liungkejin.github.io/)，在网上搜到了他的博客，才知道如何生成这个javadoc，[文章链接](https://liungkejin.github.io/2016/04/12/Publish-Kotlin-Lib-To-Jcenter.html)
+
+
+
+### 更新2018-6-22 
+
+今天又发布了一个library到jcenter服务器上去，按照上面的流程进行的，结果还是生成doc的地方卡住了。
+
+今年换了mac电脑，环境啥的都变了，上面那个`dokkaJavadoc`任务死活执行不下去。开始说是`-Djava.ext.dirs`这个参数不正确，后来改成了 `-cp` ，结果错误不一样了，说是一个目录找不到，但是这个目录就是它的工作目录，肯定是在的，也没有报别的错误信息出来。
+
+后来没办法去github上找了另外一个库：https://github.com/Kotlin/dokka kotlin 的java文档生成工具。于是修改了那个生成javadoc的任务：
+
+```groovy
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'org.jetbrains.dokka'
+
+// load properties
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+// read properties
+def projectName = properties.getProperty("project.name")
+def projectGroupId = properties.getProperty("project.groupId")
+def projectArtifactId = properties.getProperty("project.artifactId")
+def projectVersionName = properties.getProperty("project.version")
+def projectSiteUrl = properties.getProperty("project.siteUrl")
+def projectGitUrl = properties.getProperty("project.gitUrl")
+def projectDesc = properties.getProperty("project.desc")
+
+def developerId = properties.getProperty("developer.id")
+def developerName = properties.getProperty("developer.name")
+def developerEmail = properties.getProperty("developer.email")
+
+def bintrayUser = properties.getProperty("bintray.user")
+def bintrayApikey = properties.getProperty("bintray.apikey")
+
+def javadocName = properties.getProperty("javadoc.name")
+
+group = projectGroupId
+
+// This generates POM.xml with proper parameters
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId projectGroupId
+                artifactId projectArtifactId
+
+                name projectName
+                description projectDesc
+                version projectVersionName
+                url projectSiteUrl
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id developerId
+                        name developerName
+                        email developerEmail
+                    }
+                }
+                scm {
+                    connection projectGitUrl
+                    developerConnection projectGitUrl
+                    url projectSiteUrl
+                }
+            }
+        }
+    }
+}
+
+
+version = projectVersionName
+ 
+dokka {
+    outputFormat = 'javadoc'
+    outputDirectory = "$buildDir/javadoc"
+}
+
+/**
+ * 这里将生成的文档打包成 xxxx-javadoc.jar
+ */
+task kotlinDocJar(type: Jar, dependsOn: dokka) {
+    classifier = 'javadoc'
+    from dokka.outputDirectory
+}
+
+/**
+ * 这里将源码打包成 xxx-sources.jar
+ */
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+
+artifacts {
+    archives kotlinDocJar
+    archives sourcesJar
+}
+
+// bintray configuration
+bintray {
+    user = bintrayUser
+    key = bintrayApikey
+    configurations = ['archives']
+    pkg {
+        repo = "maven"
+        name = projectName
+        desc = projectDesc
+        websiteUrl = projectSiteUrl
+        vcsUrl = projectGitUrl
+        licenses = ["Apache-2.0"]
+        publish = true
+        publicDownloadNumbers = true
+    }
+}
+```
+
+
+
+其实就是添加了一个插件`apply plugin: 'org.jetbrains.dokka'` ，然后把原来`dokkaJavadoc`任务改成了`dokka`这个任务。然后就ok了。
 
