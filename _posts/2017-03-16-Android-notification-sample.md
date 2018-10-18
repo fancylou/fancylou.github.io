@@ -21,7 +21,7 @@ categories: android
 
 这段代码执行效果如下：
 
-![](http://muliba.u.qiniudn.com/notification.jpg)
+![](http://img.muliba.net/notification.jpg)
 
 这样只是简单的展现了通知，但是不可以点击，需要添加响应效果，这时需要构造一个`PendingIntent` ，如：
 
@@ -71,9 +71,9 @@ builder.setLargeIcon(largePic);
 
 通知效果初始和普通的样式差不多，点击箭头展开后可以看到大图
 
-![默认样式](http://muliba.u.qiniudn.com/bigPicture1.jpg)
+![默认样式](http://img.muliba.net/bigPicture1.jpg)
 
-![展开样式](http://muliba.u.qiniudn.com/bigPicture2.jpg)
+![展开样式](http://img.muliba.net/bigPicture2.jpg)
 
 
 
@@ -105,9 +105,9 @@ builder.setLargeIcon(largePic);
 
 通知效果和上一个类似
 
-![普通样式](http://muliba.u.qiniudn.com/IMG_20170316_202900.png)
+![普通样式](http://img.muliba.net/IMG_20170316_202900.png)
 
-![展开样式](http://muliba.u.qiniudn.com/IMG_20170316_202930.png)
+![展开样式](http://img.muliba.net/IMG_20170316_202930.png)
 
 
 
@@ -143,9 +143,9 @@ InBoxStyle和上面的BigTextStyle差不多，它控制多行文本显示
 
 效果：
 
-![普通效果](http://muliba.u.qiniudn.com/inBox1.jpg)
+![普通效果](http://img.muliba.net/inBox1.jpg)
 
-![展开样式](http://muliba.u.qiniudn.com/inBox2.jpg)
+![展开样式](http://img.muliba.net/inBox2.jpg)
 
 
 
@@ -188,9 +188,9 @@ InBoxStyle和上面的BigTextStyle差不多，它控制多行文本显示
 
 展现效果如下：
 
-![普通样式](http://muliba.u.qiniudn.com/media1.jpg)
+![普通样式](http://img.muliba.net/media1.jpg)
 
-![展开样式](http://muliba.u.qiniudn.com/media2.jpg)
+![展开样式](http://img.muliba.net/media2.jpg)
 
 **这里用到的Action在普通样式里面也可以使用，这样普通样式的通知就可以展开了，展开之后就能看到你添加的Action按钮**
 

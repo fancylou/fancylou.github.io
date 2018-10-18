@@ -9,23 +9,23 @@ Android开发的时候会使用到很多优秀的开源库，gradle引入这些�
 
 想发布包到Jcenter，先的去[Bintray](https://bintray.com/)注册账户，这里注意注册一个开源账户，前面那个免费账户要什么组织什么的，我也没搞懂，反正就是一直没传成功！
 
-![](http://muliba.u.qiniudn.com/blog/post/bintray.jpg)
+![](http://img.muliba.net/blog/post/bintray.jpg)
 
 注册登录之后，看下图，两个事情，知道API key在哪里、创建一个maven仓库
 
-![](http://muliba.u.qiniudn.com/blog/post/bintray_index.png)
+![](http://img.muliba.net/blog/post/bintray_index.png)
 
 ## API Key
 
 点击用户名下面的Edit按钮，可以进入个人信息界面，左边菜单的最后一个选项API Key就能查到你的key，这个key后续上传你的包的时候会需要用到的。
 
-![](http://muliba.u.qiniudn.com/blog/post/bintray_api_key.png)
+![](http://img.muliba.net/blog/post/bintray_api_key.png)
 
 ## 创建maven仓库
 
 点击上上图圈出来的按钮**Add New Repository** ，进入创建界面，类型选择maven，填写你的库名称，然后保存
 
-![](http://muliba.u.qiniudn.com/blog/post/bintray_new_repository.png)
+![](http://img.muliba.net/blog/post/bintray_new_repository.png)
 
 这样Bintray网站上的事情就告一段落了。
 
@@ -198,17 +198,17 @@ apply from: "../bintrayUpload.gradle"
 
 #### install
 
-![](http://muliba.u.qiniudn.com/blog/post/gradle1.png)
+![](http://img.muliba.net/blog/post/gradle1.png)
 
 #### bintrayUpload
 
-![](http://muliba.u.qiniudn.com/blog/post/gradle2.png)
+![](http://img.muliba.net/blog/post/gradle2.png)
 
 这样就传到bintray的服务器上了。 
 
 最后一步是到bintray的网站上，将你maven仓库里面的包同步到Jcenter，等Jcenter通过了审核后，就可以在其他项目中使用你的包了。
 
-![](http://muliba.u.qiniudn.com/blog/post/bintray_sync_jcenter.png)
+![](http://img.muliba.net/blog/post/bintray_sync_jcenter.png)
 
 
 

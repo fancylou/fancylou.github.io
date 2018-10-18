@@ -11,7 +11,7 @@ date: 2017-03-29 19:59:00
 
 Kotlin和java都有枚举类，而且两者蛮类似的，但有时候面对一些特殊的业务的时候枚举类显的比较简单，Kotlin有一种类叫作sealed 类，有点类似枚举类，但是枚举类可扩展性要强，使用在一些特殊业务上面相当好用，比如Android上面经常能看到的有层级的列表。
 
-![层级列表](http://muliba.u.qiniudn.com/kotlin_sealed_class_1.jpg)
+![层级列表](http://img.muliba.net/kotlin_sealed_class_1.jpg)
 
 图上就是有多个大厦，每个大厦里面有多个会议室，这样的一个ListView，在java里面一般就是两个对象继承一个父对象。Kotlin中使用sealed类是这样的：
 

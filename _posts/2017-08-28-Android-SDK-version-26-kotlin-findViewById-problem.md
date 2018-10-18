@@ -19,7 +19,7 @@ Please specify it explicitly.
 
 然后我转到代码一看：
 
-![findViewById](http://muliba.u.qiniudn.com/blog/post/20170828/QQ%E6%88%AA%E5%9B%BE20170828140524.png)
+![findViewById](http://img.muliba.net/blog/post/20170828/QQ%E6%88%AA%E5%9B%BE20170828140524.png)
 
 我就很奇怪这个`findViewById`这个函数不是SDK本身提供的函数怎么会报错，点进源码发现这个函数好像改了。原来返回值是View，现在改成了:
 

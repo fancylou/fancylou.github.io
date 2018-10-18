@@ -11,7 +11,7 @@ date: 2017-11-22 14:46:00
 
 整体思路是这样的，通过为LayoutInfalter去设置自定义Factory，对加载的View进行分析和提取。
 
-![](http://muliba.u.qiniudn.com/blog/20171122/Activity.onCreate%28savedInstanceState-+Bundle-%29.png)
+![](http://img.muliba.net/blog/20171122/Activity.onCreate%28savedInstanceState-+Bundle-%29.png)
 
 在自定义Factory里面创建各个View，并且分析这些View的属性，是否有需要进行替换资源的属性（就是换肤），把它们记录下来，然后进行换肤操作。下面是自定义Factory的部分实现：
 
@@ -107,7 +107,7 @@ class BackgroundSkinAttr(attrName:String = "", originResId: Int = 0, resName: St
 
 这样从创建View到设置View需要替换皮肤资源的属性进行各自设置的整个过程就完成了。然后换肤的还有一个关键点，这些换肤的资源怎么获取。就是上面属性apply方法中的`FancySkinManager.instance().getResourceManager()?.getDrawable（）`这些代码。它获取的怎么就是我要的皮肤资源。
 
-![](http://muliba.u.qiniudn.com/blog/20171122/%E7%9A%AE%E8%82%A4%E8%B5%84%E6%BA%90.png)
+![](http://img.muliba.net/blog/20171122/%E7%9A%AE%E8%82%A4%E8%B5%84%E6%BA%90.png)
 
 内部资源获取的思路就是加后缀。ResourceManager里面获取资源的实现：
 

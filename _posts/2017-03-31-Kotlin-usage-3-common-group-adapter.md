@@ -10,11 +10,11 @@ date: 2017-03-31 12:12:00
 
 如我们会议室列表页面：
 
-![meeting room](http://muliba.u.qiniudn.com/kotlin_sealed_class_1.jpg)
+![meeting room](http://img.muliba.net/kotlin_sealed_class_1.jpg)
 
 还有论坛板块页面：
 
-![bbs sections](http://muliba.u.qiniudn.com/blog/post/bbs_sections.png.jpg)
+![bbs sections](http://img.muliba.net/blog/post/bbs_sections.png.jpg)
 
 等等，类似的蛮多的。
 

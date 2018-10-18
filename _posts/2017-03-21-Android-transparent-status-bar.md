@@ -17,11 +17,11 @@ categories: android kotlin
         }
 ```
 
-![](http://muliba.u.qiniudn.com/statusBar1.jpg)
+![](http://img.muliba.net/statusBar1.jpg)
 
 发现这个ActionBar和整体内容都往上了，到了状态栏下面。然后就加了`fitsSystemWindows`这个属性。
 
-![](http://muliba.u.qiniudn.com/statusBar2.jpg)
+![](http://img.muliba.net/statusBar2.jpg)
 
 这个状态栏就变成白色的了。应该是透明了，但是因为下面没有内容所以就看到了这个白色状态栏，但是他没有办法设置状态栏的背景色。于是我还是去掉了`fitsSystemWindows`属性然后在内容区域添加了状态栏的高度。
 
@@ -61,11 +61,11 @@ categories: android kotlin
 
 然后就成功了，如下图：
 
-![](http://muliba.u.qiniudn.com/statusBar3.jpg)
+![](http://img.muliba.net/statusBar3.jpg)
 
 后来又发现了大于5.0版本的情况下有问题，前面说到了高版本的状态栏我用修改`colorPrimaryDark`的方式模拟成了透明状态栏的样子，但是我的首页使用了`DrawerLayout`，发现拉出左边菜单的时候就不对了，因为状态栏的背景色是`colorPrimaryDark`的颜色。
 
-![状态栏有背景色](http://muliba.u.qiniudn.com/statusBar4.jpg)
+![状态栏有背景色](http://img.muliba.net/statusBar4.jpg)
 
 原来大于5.0版本的可以正确的设置他的状态栏为透明背景
 
@@ -82,7 +82,7 @@ categories: android kotlin
 
 这样就是真正的透明背景的状态栏
 
-![透明状态栏](http://muliba.u.qiniudn.com/statusBar5.jpg)
+![透明状态栏](http://img.muliba.net/statusBar5.jpg)
 
 
 

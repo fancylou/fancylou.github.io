@@ -31,7 +31,7 @@ realm.commitTransaction()
 
 结果报错了：
 
-![Realm和kotlin的错误](http://muliba.u.qiniudn.com/blog/post/error1.png)
+![Realm和kotlin的错误](http://img.muliba.net/blog/post/error1.png)
 
 这个错误一看之下以为是Realm没有把新的表加入到Schema中，因为原来项目中的Realm表增删改查都是好的。
 
@@ -64,7 +64,7 @@ apply plugin: 'realm-android'
 
 这个kotlin的plugin必须在realm的之前，我一看我的build文件还真是realm写前面了，于是调整位置试了试，果然问题就解决了。
 
-![kotlin with Realm](http://muliba.u.qiniudn.com/blog/post/kotlinWithRealm.png.jpg)
+![kotlin with Realm](http://img.muliba.net/blog/post/kotlinWithRealm.png.jpg)
 
 
 

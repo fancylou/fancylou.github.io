@@ -93,21 +93,21 @@ fun main(args: Array<String>) {
 
 GET findAll
 
-![GET](http://muliba.u.qiniudn.com/blog/post/20170918/students-all.png)
+![GET](http://img.muliba.net/blog/post/20170918/students-all.png)
 
 GET findById
 
-![GET](http://muliba.u.qiniudn.com/blog/post/20170918/students-one.png)
+![GET](http://img.muliba.net/blog/post/20170918/students-one.png)
 
 GET findByName
 
-![GET](http://muliba.u.qiniudn.com/blog/post/20170918/students-name.png)
+![GET](http://img.muliba.net/blog/post/20170918/students-name.png)
 
 PUT update name
 
-![PUT](http://muliba.u.qiniudn.com/blog/post/20170918/students-put-1.png)
+![PUT](http://img.muliba.net/blog/post/20170918/students-put-1.png)
 
 GET findById
 
-![GET](http://muliba.u.qiniudn.com/blog/post/20170918/students-put-2.png)
+![GET](http://img.muliba.net/blog/post/20170918/students-put-2.png)
 

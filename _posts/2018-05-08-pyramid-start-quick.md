@@ -512,15 +512,15 @@ class WikiViews(object):
 
 wiki_view:
 
-![首页](http://muliba.u.qiniudn.com/post/WX20180508-163739@2x.png)
+![首页](http://img.muliba.net/post/WX20180508-163739@2x.png)
 
 Wiki_addedit:
 
-![](http://muliba.u.qiniudn.com/post/WX20180508-163752@2x.png)
+![](http://img.muliba.net/post/WX20180508-163752@2x.png)
 
 WikiPage_view:
 
-![](http://muliba.u.qiniudn.com/post/WX20180508-163814@2x.png)
+![](http://img.muliba.net/post/WX20180508-163814@2x.png)
 
 在views中，已经把函数都封装到了一个class里面。
 
