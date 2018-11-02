@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shell脚本打包IOS和Android应用"
-categories: android,IOS
+categories: android IOS
 date: 2018-11-02 11:00:00
 ---
 
