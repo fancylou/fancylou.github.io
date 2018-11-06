@@ -15,7 +15,7 @@ date: 2018-11-02 11:00:00
 Android打包用的Gradle，所以先要配置Gradle的build脚本。
 gradle签名文件配置：
 
-```groove
+```groovy
 
 android {
 
