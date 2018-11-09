@@ -10,7 +10,11 @@ date: 2018-11-06 20:00:00
 
 我们开发应用的时候经常会用到别人开发好的组件，比如Moya网络请求库、HandyJSON阿里巴巴的JSON解析库等等很多很多。我们只需要一个Podfile文件和敲一个`pod install`就可以使用这些开源库了，非常方便。程序员的这种开源精神一直都是受到大家好评的，那既然我们也是程序员，就应用为开源做贡献的嘛。可能你有啥好点子也想开源出来，发布到CocoaPods上供大家使用，那该如何发布自己的库呢？CocoaPods提供了很简单方便的模式。
 官方提供了pod lib create这个命令来生成一个cocoapods库的模版，这个是官方的说明：[Using Pod Lib Create](https://guides.cocoapods.org/making/using-pod-lib-create.html) 。
+
 <!-- more -->
+
+
+
 ```shell
 pod lib create MyLib
 ```
