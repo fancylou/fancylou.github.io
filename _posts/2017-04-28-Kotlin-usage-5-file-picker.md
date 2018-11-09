@@ -15,6 +15,12 @@ date: 2017-04-28 09:24:00
 
 ![](http://img.muliba.net/blog/post/filePicker1.2.0-1.jpeg?imageMogr2/auto-orient/thumbnail/720x/blur/1x0/quality/75)
 
+
+
+<!-- more -->
+
+
+
 然后还设定了一些可定义项，标题的文字、标题的背景色等：
 
 ![](http://img.muliba.net/blog/post/filePicker1.2.0-2.jpeg?imageMogr2/auto-orient/thumbnail/720x/blur/1x0/quality/75)

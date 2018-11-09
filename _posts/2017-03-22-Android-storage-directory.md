@@ -20,8 +20,6 @@ Android手机存储分为内部存储和外部存储。
 
 日志：
 
-
-
 `内部存储 data 目录：/data`
 
 `内部存储 cache 目录：/cache`
@@ -29,6 +27,8 @@ Android手机存储分为内部存储和外部存储。
 `内部存储 root 目录：/system`
 
 
+
+<!-- more -->
 
 
 

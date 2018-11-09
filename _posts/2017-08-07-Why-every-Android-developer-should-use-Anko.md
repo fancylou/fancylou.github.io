@@ -20,6 +20,12 @@ Anko有4个主要的模块组成：
 
 Commons模块提供了各种各样有用的功能和函数。Layouts模块提供Kotlin代码创建UI的功能，该功能叫做Anko DSL。SQLite模块让android的SQLite数据库开发更简单。最后，Anko从kotlin 1.1 开始提供了一个重磅功能：Kotlin coroutine 。
 
+
+
+<!-- more -->
+
+
+
 ## 开发Android应用从未如此简单！
 
 这篇文章主要写的是Anko的Commons模块上面的功能函数。

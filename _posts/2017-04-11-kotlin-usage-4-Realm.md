@@ -21,6 +21,12 @@ open class Person(
 
 这里必须使用`open`这个关键字，不然Realm会提示错误，`Error:(31, 66) error: cannot inherit from final Person`
 
+
+
+<!-- more -->
+
+
+
 然后在Activity中测试新增一条数据：
 
 ```kotlin

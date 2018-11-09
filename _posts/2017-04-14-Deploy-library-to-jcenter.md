@@ -11,6 +11,12 @@ Android开发的时候会使用到很多优秀的开源库，gradle引入这些�
 
 ![](http://img.muliba.net/blog/post/bintray.jpg)
 
+
+
+<!-- more -->
+
+
+
 注册登录之后，看下图，两个事情，知道API key在哪里、创建一个maven仓库
 
 ![](http://img.muliba.net/blog/post/bintray_index.png)

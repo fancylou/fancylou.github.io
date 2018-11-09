@@ -23,6 +23,12 @@ categories: android
 
 ![](http://img.muliba.net/notification.jpg)
 
+
+
+<!-- more -->
+
+
+
 这样只是简单的展现了通知，但是不可以点击，需要添加响应效果，这时需要构造一个`PendingIntent` ，如：
 
 ```java

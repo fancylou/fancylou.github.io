@@ -9,6 +9,12 @@ categories: android kotlin
 
 因为我们的APP的使用版本是4.4及以上，所以查了下4.4版本的Android系统中如何使用透明状态栏。
 
+
+
+<!-- more -->
+
+
+
 在Android 4.4版本系统中，在Activity的setContentView(layoutResId)方法之前加入如下代码：
 
 ```kotlin

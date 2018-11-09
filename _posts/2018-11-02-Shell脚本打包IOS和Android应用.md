@@ -5,8 +5,14 @@ categories: android IOS
 date: 2018-11-02 11:00:00
 ---
 
-
 打包应用一直都是个麻烦问题，IOS也好，Android也好，开发工具都是提供通过简单的点击一步步操作进行打包，IOS还能发布到App Store等。但是开发过程中总是会有很多要求，打包发布版，开发版，不同参数打包等等。时间又长，又要一个个打，想到浪费时间！于是想到用自动构建，但是IOS构建有要求，不好操作！
+
+
+
+<!-- more -->
+
+
+
 ### AutoPacking-iOS
 这里要感谢开源，我在github上找到了这个开源打包脚本 [AutoPacking-iOS](https://github.com/stackhou/AutoPacking-iOS) 这个是通过shell脚本打包IOS，包括发布到蒲公英。我的IOS企业应用就是用了这个脚本，相当好用！👍一个
 ### Android版

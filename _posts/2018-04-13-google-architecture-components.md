@@ -13,6 +13,10 @@ Google去年提出来一个Android开发框架叫 [Android Architecture Componen
 
 
 
+<!-- more -->
+
+
+
 ### Lifecycle
 
 首先是Lifecycle，框架提供了android.arch.lifecycle包里面的一系列类和接口，让你可以方便的感知应用的各个组件的生命周期。里面有LifecycleObserver接口以一个观察者来感知组件生命周期的各个阶段，这个接口如何观察呢，有一个生命周期组件拥有者LifecycleOwner，Activity等拥有生命周期的组件实现LifecycleOwner这个接口，并且让LifecycleObserver来观察，你就拥有生命周期感知能力的(*lifecycle-aware*),不再依赖Activity的生命周期。

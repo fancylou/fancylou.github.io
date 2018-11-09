@@ -23,6 +23,12 @@ println(user.toString())
 
 打印结果：`User(name=fancylou, age=30)`
 
+
+
+<!-- more -->
+
+
+
 它还默认定义了一个`copy()`函数，可以方便同一对象的复制修改
 
 ```kotlin

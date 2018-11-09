@@ -13,6 +13,12 @@ date: 2017-11-22 14:46:00
 
 ![](http://img.muliba.net/blog/20171122/Activity.onCreate%28savedInstanceState-+Bundle-%29.png)
 
+
+
+<!-- more -->
+
+
+
 在自定义Factory里面创建各个View，并且分析这些View的属性，是否有需要进行替换资源的属性（就是换肤），把它们记录下来，然后进行换肤操作。下面是自定义Factory的部分实现：
 
 ```kotlin

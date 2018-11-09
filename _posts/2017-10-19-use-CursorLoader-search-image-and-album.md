@@ -9,6 +9,12 @@ date: 2017-10-19 16:16:00
 
 原来项目中使用到需要选择Android本地文件，就写了这个文件选择器[FancyFilePicker](https://github.com/fancylou/FancyFilePicker) ，其中还有一个仿微信的图片选择器。原来这个图片选择器查询图片使用的是`ContentResolver`， 然后自己根据图片类型什么的条件组合查询。最近看到一个官方提供的异步查询的工具`CursorLoader`，于是本着学习的心态，重写了这个图片选择器，就使用的这个异步工具`CursorLoader`。
 
+
+
+<!-- more -->
+
+
+
 首先，Activity提供了一个`LoaderManager`的管理工具来管理这个`CursorLoader`，如果用的是support-v4包，里面也同样有这个`getSupportLoaderManager`，
 
 ```kotlin

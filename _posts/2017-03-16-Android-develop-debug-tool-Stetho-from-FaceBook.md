@@ -9,6 +9,12 @@ categories: android
 
 [Stetho](http://facebook.github.io/stetho/)是一个FaceBook开发的一个帮助开发者在debug模式下进行Android应用调试的工具，方便开发者对调试应用的SharedPreference存储数据、Sqlite数据的查看和修改，还可以对network访问情况进行监控，甚至可以看到当前页面的布局tree等，**以上这一切都可以在你的Chrome浏览器上进行**，对于Android开发者而言这是一个相当给力的调试利器。
 
+
+
+<!-- more -->
+
+
+
 **集成：**
 
 首先引入核心包

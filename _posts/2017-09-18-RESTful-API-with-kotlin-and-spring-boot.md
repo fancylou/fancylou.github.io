@@ -25,6 +25,12 @@ class Student(
 
 一如既往的简单明了，什么getter、setter见鬼去吧。通过注解`@Entity`让JPA识别实体类，还有`@Id` 、 `@GeneratedValue` 注解标注了该实体类的主键，以及主键生成方式。
 
+
+
+<!-- more -->
+
+
+
 然后给Student创建一个Repository接口，很简单只要集成Spring的CrudRepository接口就好了，基本的增删改查方法就都有了。
 
 ```kotlin
