@@ -71,21 +71,20 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
  -->
 
- <div id="gitmentContainer"></div>
- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+ <div id='gitalk-container'></div>
  <script>
- var gitment = new Gitment({
-     id: '{{ page.date }} %>',
-     owner: 'fancylou',
-     repo: 'fancylou.github.io',
-     oauth: {
-         client_id: 'e5b49677a766f8034610',
-         client_secret: '03b42cf0b0e9e01a70b1922d94fbc66c990b454a',
-     },
- });
- gitment.render('gitmentContainer');
- </script>
+  const gitalk = new Gitalk({
+    clientID: 'e5b49677a766f8034610',
+    clientSecret: '03b42cf0b0e9e01a70b1922d94fbc66c990b454a',
+    repo: 'fancylou.github.io',
+    owner: 'fancylou',
+    admin: ['fancylou'],
+    id: '{{ page.date }}',      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  
+  gitalk.render('gitalk-container')
+  </script>
 
 
 {% endif %}
