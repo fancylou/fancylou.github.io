@@ -57,7 +57,7 @@ layout: default
 {% if site.enable_comment %}
 <hr>
 <!-- disqus 评论 -->
-<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 
 <div id="disqus_thread"></div>
 <script  type="text/javascript">
@@ -69,6 +69,22 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ -->
+
+ <div id="gitmentContainer"></div>
+ <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+ <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+ <script>
+ var gitment = new Gitment({
+     owner: 'fancylou',
+     repo: 'fancylou.github.io',
+     oauth: {
+         client_id: 'e5b49677a766f8034610',
+         client_secret: '03b42cf0b0e9e01a70b1922d94fbc66c990b454a',
+     },
+ });
+ gitment.render('gitmentContainer');
+ </script>
 
 
 {% endif %}
