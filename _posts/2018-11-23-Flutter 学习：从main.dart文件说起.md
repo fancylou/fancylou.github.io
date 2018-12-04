@@ -6,12 +6,11 @@ date: 2018-11-23 14:10:00
 ---
 
 这个是我学习Flutter的一个系列文章：
-1. [Flutter 学习：开发环境、开发工具、初始化一个项目](http://www.muliba.net/ios/android/2018/11/16/Flutter-%E5%AD%A6%E4%B9%A0-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7-%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE.html)
-2. Flutter 学习：从main.dart文件说起
+1. [Flutter 学习1：开发环境、开发工具、初始化一个项目](http://www.muliba.net/ios/android/2018/11/16/Flutter-%E5%AD%A6%E4%B9%A0-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7-%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE.html)
+2. Flutter 学习2：从main.dart文件说起
+3. [Flutter 学习3：转场、导航](http://www.muliba.net/flutter/2018/12/04/Flutter-学习3-转场-导航.html)
 
-本文第二篇《Flutter 学习：从main.dart文件说起》。
-
-<!-- more -->
+ 
 ### flutter的命令
 上次那篇文章写了环境安装，开发工具插件安装然后用插件生成一个`flutter`项目。生成一个新的项目非常简单，点一下插件的`New Project`就行了。其实点击这个`New Project`就是执行了一个命令：
 
@@ -24,6 +23,9 @@ $ flutter create appName
 ```shell
 $ flutter create -i swift -a kotlin appName
 ```
+
+<!-- more -->
+
 ### 热更新
 Flutter提供了热更新功能来提升开发者的效率，还是用那个生成的项目来测试下。我把中间的那串英文改成了中文，然后保存一下这个`main.dart`文件：
 ![](http://img.muliba.net/post/Screen Shot 2018-11-23 at 14.45.57.png-500.500)
