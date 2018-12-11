@@ -9,6 +9,7 @@ date: 2018-11-23 14:10:00
 1. [Flutter 学习1：开发环境、开发工具、初始化一个项目](http://www.muliba.net/flutter/2018/11/16/Flutter-学习-开发环境-开发工具-初始化一个项目.html)
 2. Flutter 学习2：从main.dart文件说起
 3. [Flutter 学习3：转场、导航](http://www.muliba.net/flutter/2018/12/04/Flutter-学习3-转场-导航.html)
+4. [Flutter 学习4：集成到原有的项目中](http://www.muliba.net/flutter/2018/12/09/Flutter-%E5%AD%A6%E4%B9%A04-%E9%9B%86%E6%88%90%E5%88%B0%E5%8E%9F%E6%9C%89%E7%9A%84%E9%A1%B9%E7%9B%AE%E4%B8%AD.html)
 
  
 ### flutter的命令
