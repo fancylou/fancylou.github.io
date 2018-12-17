@@ -10,8 +10,9 @@ date: 2018-11-23 14:10:00
 2. Flutter 学习2：从main.dart文件说起
 3. [Flutter 学习3：转场、导航](http://www.muliba.net/flutter/2018/12/04/Flutter-学习3-转场-导航.html)
 4. [Flutter 学习4：集成到原有的项目中](http://www.muliba.net/flutter/2018/12/09/Flutter-%E5%AD%A6%E4%B9%A04-%E9%9B%86%E6%88%90%E5%88%B0%E5%8E%9F%E6%9C%89%E7%9A%84%E9%A1%B9%E7%9B%AE%E4%B8%AD.html)
+5. [Flutter 学习5：开发Dart包和插件包](http://www.muliba.net/flutter/2018/12/14/Flutter-%E5%AD%A6%E4%B9%A05-%E5%BC%80%E5%8F%91Dart%E5%8C%85%E5%92%8C%E6%8F%92%E4%BB%B6%E5%8C%85.html)
 
- 
+
 ### flutter的命令
 上次那篇文章写了环境安装，开发工具插件安装然后用插件生成一个`flutter`项目。生成一个新的项目非常简单，点一下插件的`New Project`就行了。其实点击这个`New Project`就是执行了一个命令：
 
@@ -45,7 +46,7 @@ void main() => runApp(new MyApp());
 其实，`Flutter`的思路就是来自于Facebook的React，它的整个UI界面就是由这些`Widget`组合起来的。它就像一棵树，最顶部是这个`MyApp`，里面有子元素`MyHomePage`，`MyHomePage`还有子元素`AppBar`、`FloatingActionButton`、`Text`，一层层往下展开。
 
  `Widget`主要有两种：`StatelessWidget`、`StatefulWidget` 。
- 
+
 * `StatelessWidget`是不可变的，它可以在生成之前接收一些不可变的参数，一旦生成了就不可变了。比如基础的一些组件`Text`（显示文字用的）、`Container`（一个容器）等。
 
 * `StatefulWidget`是可变的，它是如何变化的呢？靠的是`State`，这种`StatefulWidget`都包含了一个`State createState();`，就比如上面`main.dart`里面的`MyHomePage`
