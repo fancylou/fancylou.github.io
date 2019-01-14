@@ -2,7 +2,7 @@
 layout: post
 title: "Flutter 学习7：Dart语言基础"
 categories: flutter
-date: 2018-01-11 13:00:00
+date: 2019-01-11 13:00:00
 ---
 
 1. [Flutter 学习1：开发环境、开发工具、初始化一个项目](http://www.muliba.net/ios/android/2018/11/16/Flutter-%E5%AD%A6%E4%B9%A0-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7-%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE.html)
