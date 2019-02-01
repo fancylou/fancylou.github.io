@@ -13,6 +13,7 @@ date: 2018-12-14 14:10:00
 5. Flutter 学习5：开发Dart包和插件包
 6. [Flutter 学习6：绘制动画](http://www.muliba.net/flutter/2018/12/28/Flutter-%E5%AD%A6%E4%B9%A06-%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB.html)
 7. [Flutter 学习7：Dart语言基础](http://www.muliba.net/flutter/2018/01/11/Flutter-%E5%AD%A6%E4%B9%A07-Dart%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80.html)
+8. [Flutter 学习8：BottomSheet](http://www.muliba.net/flutter/2019/01/26/Flutter-%E5%AD%A6%E4%B9%A08-BottomSheet.html)
 
 
 在上面的列表中第二篇文章就说到过怎么使用一个外部的包，需要到`pubspec.yaml`的dependencies中引入，然后到需要使用的Dart文件中import。外部包这种东西在开发中是很常见的了，它有可能是某种需求的UI库，也有可能是方便开发的工具库等等。
