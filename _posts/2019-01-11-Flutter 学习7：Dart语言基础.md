@@ -13,6 +13,7 @@ date: 2019-01-11 13:00:00
 6. [Flutter 学习6：绘制动画](http://www.muliba.net/flutter/2018/12/28/Flutter-%E5%AD%A6%E4%B9%A06-%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB.html)
 7. Flutter 学习7：Dart语言基础
 8. [Flutter 学习8：BottomSheet](http://www.muliba.net/flutter/2019/01/26/Flutter-%E5%AD%A6%E4%B9%A08-BottomSheet.html)
+9. [Flutter 学习9：Positioned、Transform等控件使用以及手势控制](http://www.muliba.net/flutter/2019/01/31/Flutter-学习9-Positioned-Transform等控件使用以及手势控制.html)
 
 这些概念其实一开始就应该去弄明白的，当时接触Flutter的时候发现跟Java很类似，也就没有花时间去看看文档，后来在用的过程中发现还是有必要看看文档的，不然在开发中经常会遇到很多语法上面的疑惑再去查文档，蛮浪费时间的。
 
