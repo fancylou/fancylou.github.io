@@ -14,6 +14,7 @@ date: 2019-01-26 21:00:00
 7. [Flutter 学习7：Dart语言基础](http://www.muliba.net/flutter/2019/01/11/Flutter-%E5%AD%A6%E4%B9%A07-Dart%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80.html)
 8. Flutter 学习8：BottomSheet
 9. [Flutter 学习9：Positioned、Transform等控件使用以及手势控制](http://www.muliba.net/flutter/2019/01/31/Flutter-学习9-Positioned-Transform等控件使用以及手势控制.html)
+10. [Flutter 学习10：NestedScrollView、SliverAppBar、TabBar](http://www.muliba.net/flutter/2019/02/17/Flutter-学习10-NestedScrollView-SliverAppBar-TabBar.html)
 
 **`BottomSheet`** 是一个Flutter提供的一个组件，有点类似Android的PopWindow，从底部弹出一个Widget。今天就说说这个`BottomSheet`的用法。
 
