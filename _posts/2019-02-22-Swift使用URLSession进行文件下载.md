@@ -34,6 +34,12 @@ let downloadTask = session?.dataTask(with: urlRequest)
 // 开始下载
 downloadTask?.resume()
 ```
+
+
+<!-- more -->
+
+
+
 下面是网络请求代理的实现，因为是下载图片所有这里用了`URLSessionDataDelegate`代理，完整的实现代码：
 
 ```swift
