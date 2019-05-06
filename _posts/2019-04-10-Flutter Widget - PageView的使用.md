@@ -58,6 +58,10 @@ PageView(
 ![1554884412508646.2019-04-10 16_25_39](http://img.muliba.net/2019-04-10-1554884412508646.2019-04-10%2016_25_39.gif)
 
 
+
+<!-- more -->
+
+
 ### PageView.builder
 builder方式构造，提供了itemBuilder方式，而不是默认构造的children方式，能够更加方便处理动态UI，或者有固定规律的UI，比如广告Banner等。
 这种方式需要注意一点，如果不设置itemCount,PageView默认是无限个数的，也就是能一直往后翻页下去，index一直往上增加。
